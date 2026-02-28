@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="/dist/output.css">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+</head>
+
+<body>
+  <section class="flex flex-col">
+
+    <!--HEADER SECTION-->
+    <header class="relative bg-[url(/images/mobile/image-header.jpg)] bg-bottom bg-cover object-center bg-no-repeat h-[600px] w-[full] 
+     lg:bg-[url(/images/desktop/image-desktopheader.jpg)] lg:bg-bottom lg:object-cover lg:object-center lg:bg-cover lg:h-[800px]
+      md:bg-[url(/images/desktop/image-desktopheader.jpg)] md:h-[700px] md:bg-cover md:object-center md:-[20%]">
+
+      <!--Logo-->
+      <div class="flex items-center mx-auto justify-between px-6 py-4 md:px-10 md:py-12 lg:px-8 lg:py-6 ">
+        <img src="images/logo.svg" alt="logo" class="lg:w-[8%] lg:h-[6%]">
+        
+        <!--menu icon, mobile view-->
+        <details class="relative lg:hidden">
+          <summary class="list-none cursor-pointer">
+            <img src="images/icon-hamburger.svg" alt="harmburger">
+          </summary>
+
+           <div class="absolute top-full right-1/2 translate-x-1 w-80 max-w-sm mx-auto 
+            py-8 space-y-8 flex flex-col bg-white text-center mt-12 ">
+            
+              <div class="absolute -top-3 right-8 border-l-[14px] border-l-transparent
+              border-r-[20px] border-r-transparent  border-b-[20px] border-b-white ">
+
+            <!--mobile view navsection-->
+              </div>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#projects">Projects</a>
+              <button class="bg-yellow-400 px-6 py-3 inline-block mx-auto rounded-full font-bold">CONTACT</button>
+            </div>
+       </details>
+      
+       <!--Navbar sections, DESKTOP VIEW-->
+      <ul class="gap-8 hidden lg:block lg:flex lg:items-center">
+          <li class="text-white"><a href="#about">About</a></li>
+          <li class="text-white"><a href="#services">Services</a></li>
+          <li class="text-white"><a href="#projects">Projects</a></li>
+          <li class="text-black bg-white rounded-full px-4 py-2 font-bold hover:cursor-pointer hover:text-white hover:bg-transparent 
+          hover:border hover:border-yellow-200 ">CONTACT</li>
+      </ul>
+        
+    </div>
+
+
+    <!--Herosection, brand image-->
+     <div class="text-center mt-20 md:mt-20 lg:mt-40">
+        <h1 class=" text-white text-5xl font-bold leading-[50px] tracking-widest">WE ARE CREATIVES</h1>
+        <img src="images/icon-arrow-down.svg" alt="arrow" class="mx-auto mt-16 md:mt-[40px] lg:mt-[70px]">
+      </div>
+    </header>
+  
+    <!--Main section-->
+    <main>
+        <!--About section-->
+        <article id="about" class="lg:grid lg:grid-cols-2 lg:auto-rows-fr">
+          <div class="lg:order-1 lg:flex-1 ">
+            <img src="images/mobile/image-transform.jpg" alt="mobile-transform" class="block object-cover w-full h-full lg:hidden">
+            <img src="images/desktop/image-transform.jpg" alt="desktop-transform" class="hidden w-full h-full lg:block lg:object-cover">
+          </div>
+
+          <div class=" lg:flex-1">
+            <div>
+
+              <div class="text-center p-8 lg:text-left lg:p-[120px]">
+                <h1 class="font-bold text-4xl text-black block lg:hidden">Transform your brand</h1>
+              <h1 class="font-bold text-4xl text-black hidden lg:block">Transform your <br> brand</h1>
+              <p class="mt-10 leading-[30px] text-[#707070] font-bold "> We are a full-service creative agency specializing in helping brands grow fast. 
+              Engage your clients through compelling visuals that do most of the marketing for you.</p>
+              <h4 class="font-bold mt-6">LEARN MORE</h4>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <article id="about" class="lg:flex lg:flex-row lg:auto-rows-fr">
+          <div class="lg:flex-1">
+            <img src="images/mobile/image-stand-out.jpg" alt="stand-out" class="block object-cover object-center w-full lg:hidden">
+            <img src="images/desktop/image-stand-out.jpg" alt="standout" class="hidden  w-full h-full lg:block lg:object-cover md:object-cover md:object-center md:object-bottom">
+          </div>
+
+          <div class="lg:flex-1">
+           
+            <div class="text-center lg:text-left p-8 lg:p-[120px]">
+              <h1 class="font-bold text-4xl text-black block lg:hidden">Stand out to the right audience</h1>
+              <h1 class="font-bold text-4xl text-black hidden lg:block">Stand out to the right audience</h1>
+              <p class="mt-10 leading-[30px] text-[#707070] font-bold"> Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, 
+              we’ll build and extend your brand in digital places. </p>
+              <h4 class="font-bold mt-6 hover:underline"> LEARN MORE</h4>
+            </div>
+          </div>
+        </article>
+
+
+        <!--SERVICES section-->
+        <div id="services" class="lg:flex lg:flex-row">
+
+          <div class="relative flex-1">
+            <img src="images/image-graphic-design.jpg" alt="design" class="w-full h-[500px] object-top object-center object-cover  block lg:hidden">
+            <img src="images/image-graphic-desktopdesign.jpg" alt="graphicsdg" class="w-full h-[600px] object-bottom object-center object-cover hidden lg:block" >
+
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-center px-1 lg:px-2">
+              <h3 class="text-[#19674A] font-bold text-2xl mb-3">Graphic Design</h3>
+              <p class="text-[#19674A] text-sm">Great design makes you memorable. We deliver artwork that undescores your brand message and
+                captures potential client's attention
+              </p>
+            </div>
+          </div>
+
+
+         <div class="relative flex-1">
+            <img src="images/mobile/image-photography.jpg" alt="photo" class="w-full h-[500px]  object-top object-cover object-center  block lg:hidden">
+            <img src="images/image-desktopphotography.jpg" alt="photography" class="w-full h-[600px] object-bottom object-center object-cover hidden lg:block" >
+
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-center px-1 lg:px-2">
+              <h3 class="text-[#043A60] font-bold text-2xl mb-3">Photography</h3>
+              <p class="text-[#043A60] text-sm">Increase your credibility by getting the most stunning, high quality-photos that
+                improve your business image.
+              </p>
+            </div>
+          </div>
+        </div>
+    </main>
+
+    <!--Projects , Testimonials Section-->
+    <section id="projects" class="px-10 py-12 lg:px-10 lg:py-20">
+      <h1 class="text-center tracking-widest font-bold text-2xl">CLIENT TESTIMONIALS</h1>
+
+        
+      <div class="flex flex-col gap-8 lg:p-10 lg:flex lg:flex-row lg:gap-8 lg:px-20 mt-10 items-center">
+
+        <!--Testimonial 1-->
+        <div class="text-center flex flex-col gap-8 lg:flex lg:flex-col lg:gap-10">
+          <img src="images/image-emily.jpg" alt="emily" class="mx-auto rounded-full w-[20%]">
+          <p class="text-[14px]">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines
+           were always hit.</p>
+
+          <div>
+            <h3 class="font-bold">Emily R.</h3>
+            <span class="text-[12px]">Marketing Director</span>
+          </div>
+        </div>
+
+        <!--Testimonial 2-->
+        <div class="text-center flex flex-col gap-8 lg:flex lg:flex-col lg:gap-10">
+          <img src="images/image-thomas.jpg" alt="thomas" class="mx-auto rounded-full w-[20%]">
+          <p class="text-[14px]">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying 
+          and enjoyable experience.</p>
+
+          <div>
+            <h3 class="font-bold">Thomas S.</h3>
+            <span class="text-[12px]"> Chief Operating Officer</span>
+          </div>
+        </div>
+
+        <!--Testimonial 3-->
+        <div class="flex flex-col gap-8  text-center lg:flex lg:flex-col lg:gap-10">
+          <img src="images/image-jennie.jpg" alt="jennie" class="mx-auto rounded-full w-[20%]">
+          <p class="text-[14px]"> Incredible end result! Our sales increased over 400% when we worked with Sunnyside. 
+          Highly recommended!</p>
+
+          <div>
+            <h3 class="font-bold"> Jennie F.</h3>
+            <span class="text-[12px]">Business Owner</span>
+          </div>
+        </div>
+     </div>
+    </section>
+
+    <!--Projectss-->
+    <div id="projects" class="grid grid-cols-2 lg:flex lg:flex-row">
+     <div> <!--Milk Bottle pj-->
+        <img src="images/mobile/image-gallery-milkbottles.jpg" alt="milkbottle" class="block object-cover w-full h-full lg:hidden ">
+        <img src="images/desktop/image-gallery-milkbottles.jpg" alt="milkbottle-desktop" class="hidden lg:block">
+     </div>
+
+     <div> <!--Orange pj-->
+        <img src="images/mobile/image-gallery-orange.jpg" alt="orange" class="block object-cover w-full h-full lg:hidden">
+        <img src="images/desktop/image-gallery-orange.jpg" alt="orange-desktop" class="hidden lg:block lg:object-cover lg:w-full lg:h-full">
+      </div>
+
+     <div> <!--Cone pj-->
+        <img src="images/mobile/image-gallery-cone.jpg" alt="cone" class="block object-cover w-full h-full lg:hidden">
+        <img src="images/desktop/image-gallery-cone.jpg" alt="cone-desktop" class="hidden lg:block">
+     </div>
+
+     <div> <!--Sugar cube pj-->
+        <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="sugarcube" class="block object-cover w-full h-full lg:hidden">
+        <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugarcube-dektop" class="hidden lg:block">
+      </div>
+    </div>
+
+    <!--Footer Section-->
+    <footer class="p-20 flex flex-col gap-6 bg-[#91D3C6] lg:py-20">
+
+      <div class="lg:flex lg:flex-col gap-6 justify-between lg:items-center ">
+
+        <img src="images/logo.svg" alt="logo" class="mx-auto text-red-800">
+
+        <div class="mt-10 text-center">
+          <ul class="flex justify-center gap-2 px-10 md:mx-auto md:space-around space-around gap-2 lg:gap-6">
+            <li class="text-green-900 text-[14px] hover:cursor-pointer hover:text-white">About</li>
+            <li class="text-green-900 text-[14px] hover:cursor-pointer hover:text-white">Services</li>
+            <li class="text-green-900 text-[14px] hover:cursor-pointer hover:text-white">Projects</li>
+          </ul>
+        </div>
+
+        <!--Social media icons-->
+        <div class="mt-10 gap-2 flex flex-row justify-center px-auto lg:gap-6 lg:mt-10">
+          <img src="images/icon-facebook.svg" alt="facebook">
+          <img src="images/icon-instagram.svg" alt="instagram">
+          <img src="images/icon-twitter.svg" alt="twitter">
+          <img src="images/icon-pinterest.svg" alt="pinterest">
+        </div>
+      </div>
+    </footer>
+  </section>  
+</body>
+</html>
